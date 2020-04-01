@@ -1,15 +1,26 @@
 
+let nombre = "Juan";
+let profesor = true;
+const dni = '86364845';
+
+let hobbies = [ "nadar en mar 'abierto' ", 'correr' ];
+
 let persona = {
-    nombre : "tato",
+    nombre : 'Tato',
+    dni : 234234234,
     profesor : true,
-    dni : "30999999",
     hobbies : [],
-    diHola : function (){
-        return"hola mi nombre es " + this.nombre;
+    diHola : function () {
+        return 'hola mi nombre es ' + this.nombre;
     }
 };
-persona.hobbies.push("tomar cervesa"),
-console.log(persona.hobbies);
-persona.nombre = "gaston"
 
-console.log (persona.diHola());
+// aqui le agrego algo a hobbies
+persona.hobbies.push('tomar cerveza');
+persona.hobbies.push('pintar');
+persona.hobbies.push('guitarra');
+
+persona.hobbies = ['caminar','correr'];
+console.log(persona.hobbies);
+//le voy a cambiar el nombre
+persona.nombre = 'Gaston';
